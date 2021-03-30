@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { User } from './pages/example';
+import TodoList from './components/TodoList/index';
+
 import './App.css';
 
 const App: React.FC = () => {
@@ -9,8 +10,8 @@ const App: React.FC = () => {
   });
 
   return (
-    <div>
-      <User name={'测试'} age={10} />
+    <div className="App">
+      <TodoList />
     </div>
   );
 };
